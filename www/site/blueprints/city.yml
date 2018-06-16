@@ -1,0 +1,17 @@
+title: City
+pages:
+  template:
+    - stockist
+  num:
+    mode: default
+    display: null
+  max: null
+  limit: "100"
+  sort: title
+  hide: false
+files: false
+fields:
+  prevnext: prevnext
+  title:
+    label: Title
+    type: title

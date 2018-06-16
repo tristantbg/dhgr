@@ -1,0 +1,76 @@
+#page-content
+	padding $padding
+	+below($md)
+		padding ($padding/2)
+
+#logo-top
+	position absolute
+	top $padding
+	right $padding
+	width 3rem
+	+below($md)
+		top ($padding/2)
+		right ($padding/2)
+	+below($sm)
+		display none
+	svg
+		display block
+		width 100%
+
+#email
+	.message
+		margin $padding 0
+		p:not(:last-child)
+			margin-bottom 2em
+		a:not(:hover)
+			text-decoration underline
+	.logo
+		width 100%
+		max-width 33rem
+		margin-bottom 0.5rem
+		svg
+			display block
+			width 100%
+
+#stockists
+	text-transform uppercase
+	display block
+	width 100%
+	margin 0 auto
+	line-height 1.5
+	+above($sm + 1)
+		display flex
+		justify-content center
+	.country
+		padding-left 2em
+		display flex
+		:first-child
+			margin-right 0.5em
+	.city
+		display flex
+		flex-direction column
+		&:not(:first-child)
+			margin-top 0.5em
+
+#collection
+	display block
+	width calc(100% - 33rem)
+	margin 0 auto
+	+below($md)
+		width 100%
+	.responsive-image:not(:last-child)
+		margin-bottom $padding
+		+below($md)
+			margin-bottom ($padding/2)
+
+#menu
+	position fixed
+	top $padding
+	left $padding
+	text-transform uppercase
+	display flex
+	flex-direction column
+	line-height 1.5
+	+below($md)
+		position static
+		margin-bottom ($padding/2)

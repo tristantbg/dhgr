@@ -1,0 +1,16 @@
+title: Stockists
+pages:
+  template:
+    - country
+  num:
+    mode: zero
+    display: null
+  max: null
+  limit: "100"
+  sort: title asc
+  hide: false
+files: false
+fields:
+  title:
+    label: Title
+    type: title

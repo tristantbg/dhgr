@@ -1,0 +1,19 @@
+title: Home
+pages: false
+files: false
+fields:
+  title:
+    label: Subject
+    type:  text
+  from:
+    label: From
+    type: textarea
+  cc:
+    label: CC
+    type: textarea
+  to:
+    label: To
+    type: textarea
+  text:
+    label: Text
+    type: textarea

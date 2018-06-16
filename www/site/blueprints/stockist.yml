@@ -1,0 +1,11 @@
+title: Stockist
+pages: false
+files: false
+fields:
+  prevnext: prevnext
+  title:
+    label: Title
+    type: title
+  link:
+    label: Link
+    type: url
