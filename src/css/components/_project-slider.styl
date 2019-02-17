@@ -48,13 +48,16 @@
 			+below($md)
 				display none
 			svg
-				display none
+				// display none
 			&.previous
 				left 0
 			&.next
 				right 0
 			&[disabled]
 				display none
+			&:focus
+				box-shadow none
+				outline none
 		#mouse-nav
 			align()
 			position fixed
