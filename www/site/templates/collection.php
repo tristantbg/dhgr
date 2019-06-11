@@ -8,6 +8,9 @@
 </div>
 
 <div id="collection">
+  <?php if ($page->text()->isNotEmpty()): ?>
+    <div class="responsive-image"><?= $page->text()->kt() ?></div>
+  <?php endif ?>
 	<?php foreach ($page->medias()->toStructure() as $key => $m): ?>
 		<?php snippet('responsive-image', ['field' => $m, 'preload' => true]) ?>
 	<?php endforeach ?>
